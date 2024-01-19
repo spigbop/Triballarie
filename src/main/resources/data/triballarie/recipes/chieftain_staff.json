@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " i ",
+    " G "
+  ],
+  "key": {
+    "S": {
+      "item": "triballarie:goblin_skull"
+    },
+    "i": {
+      "item": "minecraft:stick"
+    },
+    "G": {
+      "item": "triballarie:sapphire"
+    }
+  },
+  "result": {
+    "item": "triballarie:chieftain_staff",
+    "count": 1
+  }
+}
+

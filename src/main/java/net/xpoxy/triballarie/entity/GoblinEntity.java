@@ -1,10 +1,7 @@
 package net.xpoxy.triballarie.entity;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.LookAtEntityGoal;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.TemptGoal;
-import net.minecraft.entity.ai.goal.WanderAroundFarGoal;
+import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.Angerable;
@@ -29,11 +26,16 @@ public class GoblinEntity extends PathAwareEntity implements Angerable {
 
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new TemptGoal(this, 1.25D, Ingredient.ofItems(Items.GLOW_BERRIES), true));
-        //this.goalSelector.add(2, new FollowParentGoal(this, 1.15D));
-        this.goalSelector.add(2, new WanderAroundFarGoal(this, 1D));
-        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
-        this.goalSelector.add(4, new WanderAroundFarGoal(this, 1D));
+        this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, true));
+        this.goalSelector.add(2, new TemptGoal(this, 1D, Ingredient.ofItems(Items.GLOW_BERRIES), true));
+        this.goalSelector.add(3, new WanderNearTargetGoal(this, 0.9, 32.0f));
+        this.goalSelector.add(3, new WanderAroundPointOfInterestGoal((PathAwareEntity)this, 0.5, false));
+        this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
+        this.goalSelector.add(5, new LookAroundGoal(this));
+    }
+
+    protected void initDomesticatedGoals() {
+
     }
 
     public static DefaultAttributeContainer.Builder createGoblinAttiributes() {
@@ -52,31 +54,23 @@ public class GoblinEntity extends PathAwareEntity implements Angerable {
 
     @Override
     public int getAngerTime() {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public void setAngerTime(int var1) {
-        // TODO Auto-generated method stub
-
     }
 
     @Override
     public UUID getAngryAt() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public void setAngryAt(UUID var1) {
-        // TODO Auto-generated method stub
-
     }
 
     @Override
     public void chooseRandomAngerTime() {
-        // TODO Auto-generated method stub
-
     }
 }
