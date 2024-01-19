@@ -16,10 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.xpoxy.Triballarie"
+			"net.xpoxy.triballarie.Triballarie"
+		],
+		"client": [
+			"net.xpoxy.triballarie.TriballarieClient"
 		],
 		"fabric-datagen": [
-			"net.xpoxy.TriballarieDataGenerator"
+			"net.xpoxy.triballarie.TriballarieDataGenerator"
 		]
 	},
 	"mixins": [

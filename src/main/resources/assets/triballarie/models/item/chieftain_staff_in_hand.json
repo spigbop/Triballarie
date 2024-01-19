@@ -1,0 +1,104 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "triballarie:item/chieftain_staff_in_hand",
+		"particle": "triballarie:item/chieftain_staff_in_hand"
+	},
+	"elements": [
+		{
+			"from": [8, 11, 5],
+			"to": [10, 12, 6],
+			"faces": {
+				"north": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"east": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"down": {"uv": [0, 15, 1, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 11, 5],
+			"to": [7, 12, 6],
+			"faces": {
+				"north": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"east": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"down": {"uv": [0, 15, 1, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Head",
+			"from": [5, 12, 5],
+			"to": [11, 17, 11],
+			"faces": {
+				"north": {"uv": [10, 11, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"down": {"uv": [10, 6, 16, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Head Tip",
+			"from": [6, 17, 6],
+			"to": [10, 18, 10],
+			"faces": {
+				"north": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"east": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"down": {"uv": [0, 15, 1, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Body",
+			"from": [7, -2, 7],
+			"to": [9, 12, 9],
+			"faces": {
+				"north": {"uv": [2, 2, 4, 16], "texture": "#0"},
+				"east": {"uv": [8, 2, 10, 16], "texture": "#0"},
+				"south": {"uv": [6, 2, 8, 16], "texture": "#0"},
+				"west": {"uv": [4, 2, 6, 16], "texture": "#0"},
+				"up": {"uv": [6, 0, 8, 2], "texture": "#0"},
+				"down": {"uv": [8, 0, 10, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Gold Tip",
+			"from": [6.75, -4.5, 6.75],
+			"to": [9.25, -2, 9.25],
+			"faces": {
+				"north": {"uv": [13, 0, 16, 3], "texture": "#0"},
+				"east": {"uv": [13, 3, 16, 6], "texture": "#0"},
+				"south": {"uv": [10, 0, 13, 3], "texture": "#0"},
+				"west": {"uv": [10, 0, 13, 3], "texture": "#0"},
+				"up": {"uv": [13, 0, 16, 3], "texture": "#0"},
+				"down": {"uv": [10, 3, 13, 6], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Head",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [
+				{
+					"name": "Teeth",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"children": [0, 1]
+				},
+				2,
+				3
+			]
+		},
+		4,
+		5
+	]
+}

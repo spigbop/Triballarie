@@ -1,9 +1,12 @@
 {
 	"required": true,
-	"package": "net.xpoxy.mixin",
+	"package": "net.xpoxy.triballarie.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"mixins": [
-		"ExampleMixin"
+	"mixins": [],
+	"client": [
+		"ItemRendererAccessor",
+		"ItemRendererMixin",
+		"ModelLoaderMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
