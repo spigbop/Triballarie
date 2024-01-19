@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "triballarie",
+	"version": "${version}",
+	"name": "triballarie",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Xpoxy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/triballarie/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xpoxy.Triballarie"
+		],
+		"fabric-datagen": [
+			"net.xpoxy.TriballarieDataGenerator"
+		]
+	},
+	"mixins": [
+		"triballarie.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
