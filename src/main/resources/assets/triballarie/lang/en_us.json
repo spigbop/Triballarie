@@ -1,9 +1,11 @@
 {
-	"itemGroup.triballarie.main": "Triballarie",
-
+	"itemGroup.triballarie.creative_tab": "Triballarie",
+	"container.triballarie.tribe":  "Tribe",
 	"item.triballarie.sapphire": "Golden Sapphire",
 	"item.triballarie.chieftain_staff": "Chieftain Staff",
 	"item.triballarie.goblin_skull": "Goblin Skull",
+	"item.triballarie.goblin_spawn_egg": "Goblin Spawn Egg",
 	"block.triballarie.bonfire": "Bonfire",
-	"block.triballarie.bonfire_tribal": "Tribe Bonfire"
+	"block.triballarie.bonfire_tribal": "Tribe Bonfire",
+	"entity.triballarie.goblin": "Goblin"
 }

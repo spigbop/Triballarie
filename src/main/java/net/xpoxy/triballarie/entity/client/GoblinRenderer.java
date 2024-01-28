@@ -10,7 +10,7 @@ public class GoblinRenderer extends MobEntityRenderer<GoblinEntity, GoblinModel<
     private static final Identifier TEXTURE = new Identifier(Triballarie.MOD_PREFIX, "textures/entity/goblin_variant_0_promotion_1.png");
 
     public GoblinRenderer(EntityRendererFactory.Context context) {
-        super(context, new GoblinModel<>(context.getPart(ModModelLayers.GOBLIN)), 0.7f);
+        super(context, new GoblinModel<>(context.getPart(ModModelLayers.GOBLIN)), 0.3f);
     }
 
     @Override

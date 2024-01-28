@@ -27,9 +27,9 @@ public class GoblinEntity extends PathAwareEntity implements Angerable {
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(1, new MeleeAttackGoal(this, 1.0, true));
-        this.goalSelector.add(2, new TemptGoal(this, 1D, Ingredient.ofItems(Items.GLOW_BERRIES), true));
+        this.goalSelector.add(2, new TemptGoal(this, 1D, Ingredient.ofItems(Items.GLOW_BERRIES), false));
         this.goalSelector.add(3, new WanderNearTargetGoal(this, 0.9, 32.0f));
-        this.goalSelector.add(3, new WanderAroundPointOfInterestGoal((PathAwareEntity)this, 0.5, false));
+        this.goalSelector.add(3, new WanderAroundPointOfInterestGoal(this, 0.5, false));
         this.goalSelector.add(4, new LookAtEntityGoal(this, PlayerEntity.class, 4f));
         this.goalSelector.add(5, new LookAroundGoal(this));
     }

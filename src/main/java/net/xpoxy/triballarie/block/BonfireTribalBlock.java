@@ -1,28 +1,20 @@
 package net.xpoxy.triballarie.block;
 
 import com.mojang.serialization.MapCodec;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.BlockWithEntity;
+import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.function.Supplier;
+
 public class BonfireTribalBlock extends BlockWithEntity {
-    public BonfireTribalBlock(Settings settings) {
+    protected BonfireTribalBlock(Settings settings) {
         super(settings);
     }
 
-    @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if(world.isClient()) {
-            // open tribe gui
-        }
-        return ActionResult.SUCCESS;
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 
     @Override

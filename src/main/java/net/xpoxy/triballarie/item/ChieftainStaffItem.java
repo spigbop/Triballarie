@@ -6,7 +6,7 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.xpoxy.triballarie.block.ModBlocks;
+import net.xpoxy.triballarie.block.TriballarieBlocks;
 
 public class ChieftainStaffItem extends Item {
     public ChieftainStaffItem(Settings settings) {
@@ -20,7 +20,7 @@ public class ChieftainStaffItem extends Item {
             BlockPos usedpos = context.getBlockPos();
             if(mcworld.getBlockState(usedpos).getBlock() == Blocks.CAMPFIRE) {
                 mcworld.breakBlock(usedpos, false);
-                mcworld.setBlockState(usedpos, ModBlocks.BONFIRE_TRIBAL.getDefaultState());
+                mcworld.setBlockState(usedpos, TriballarieBlocks.BONFIRE_TRIBAL.getDefaultState());
                 // Advancement
                 return ActionResult.SUCCESS;
             }
